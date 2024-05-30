@@ -64,9 +64,9 @@
             "label": "Getting data",
             "ui_data": {
               "label": "Getting data",
-              "image": "/notebook/peter-ho-stable-diffusion-project/stable-diffusion-notebook/static/elyra/notebook.svg",
+              "image": "/notebook/peter-stable-diffusion/stable-diffusion-notebook/static/elyra/notebook.svg",
               "x_pos": 87,
-              "y_pos": 292,
+              "y_pos": 293,
               "description": "Run notebook file"
             }
           },
@@ -150,8 +150,8 @@
             "label": "Fine-tune the Stable Diffusion model",
             "ui_data": {
               "label": "Fine-tune the Stable Diffusion model",
-              "image": "/notebook/peter-ho-stable-diffusion-project/stable-diffusion-notebook/static/elyra/notebook.svg",
-              "x_pos": 351,
+              "image": "/notebook/peter-stable-diffusion/stable-diffusion-notebook/static/elyra/notebook.svg",
+              "x_pos": 348,
               "y_pos": 292,
               "description": "Run notebook file"
             }
@@ -249,9 +249,9 @@
             "label": "Upload ONNX to S3",
             "ui_data": {
               "label": "Upload ONNX to S3",
-              "image": "/notebook/peter-ho-stable-diffusion-project/stable-diffusion-notebook/static/elyra/notebook.svg",
-              "x_pos": 601,
-              "y_pos": 293,
+              "image": "/notebook/peter-stable-diffusion/stable-diffusion-notebook/static/elyra/notebook.svg",
+              "x_pos": 600,
+              "y_pos": 292,
               "description": "Run notebook file"
             }
           },
@@ -299,13 +299,13 @@
         "version": 8,
         "runtime_type": "KUBEFLOW_PIPELINES",
         "properties": {
-          "name": "Dreambooth",
+          "name": "Fine-tune Teddy",
           "runtime": "Data Science Pipelines",
           "pipeline_defaults": {
-            "kubernetes_tolerations": [],
+            "kubernetes_pod_annotations": [],
             "kubernetes_pod_labels": [],
             "kubernetes_shared_mem_size": {},
-            "kubernetes_pod_annotations": [],
+            "kubernetes_tolerations": [],
             "mounted_volumes": [],
             "env_vars": [
               {
@@ -322,7 +322,7 @@
               "description": "Number of \"class images\"",
               "default_value": {
                 "type": "String",
-                "value": "100"
+                "value": "200"
               },
               "required": true
             },
